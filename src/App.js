@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import "./index.css";
+import React from "react";
+import { Header, Section } from "./Styled-Components/Styles";
+import MainContainer from "./Components/MainContainer";
+import { LuChefHat } from "react-icons/lu";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div>
+            <Header>
+                <LuChefHat style={{ color: "yellow", marginRight: "10px", fontSize: "30px" }} />
+                Food Cook Planning
+            </Header>
+            <Section>
+                <MainContainer />
+            </Section>
+        </div>
+    );
 }
 
 export default App;
